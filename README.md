@@ -9,7 +9,7 @@ The tools used will be based on the research analyzed by Andrew Huberman on epis
 ### Tools 
 1: Use Focal Vision to Initiate Goal Pursuit
 Focusing vision on one point externally and fixing it there for 30-60 sec increases focus/drive to persue goals. 
-Implementation - Timer with a dot in the center of the page or something not hard to look at at. User will look at image for 30-60 sec. 
+    - Implementation - Timer with a dot in the center of the page or something not hard to look at at. User will look at image for 30-60 sec. 
 
 2: Use Aged Self-Images to Self-Motivate
 People will persue goals more if they see themseleves aged to the time of the deadline for the goal. 
