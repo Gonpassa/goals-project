@@ -18,7 +18,7 @@ People will persue goals more if they see themseleves aged to the time of the de
 eg - I want to have graduate in 4 years. Users that visualize themselves mentally in 4 years will be less effective at persuing their goals in contrast to users that 
 saw themselves in reality aged by four years by a computer program. 
 
-Implementation - Application asks to use camera, user takes selfie, program ages picture according to the the dealing of their goal. 
+Implementation - Application asks to use camera, user takes selfie, program ages picture according to the the deadline of their goal. 
 
 3: Visualization of achieveing goal is only helpful at goal setting. 
 Visualization of achievement is helpful to set goals, but bad at motivation for the continued persuit of the goal.
