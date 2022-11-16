@@ -76,19 +76,19 @@ def register():
         confirm_password = request.form.get('confirm')
 
         if not request.form.get("username") or not request.form.get('password') or not request.form.get('confirm'):
-            error = "Please fill in all fields"
-            return render_template('register.html', error=json.dumps(error))
+            error = "Error: Please fill in all fields"
+            return render_template('register.html', error=error, retry=1)
         if password != confirm_password:
-            error = "Passwords don't match"
-            return render_template('register.html', error=json.dumps(error))
+            error = "Error: Passwords don't match"
+            return render_template('register.html', error=error, retry=1)
 
         
 
         usernames = db.execute("SELECT username FROM user")
         username = username.lower()
         if username in usernames:
-            error = 'Username taken'
-            return render_template('register.html', error=json.dumps(error))
+            error = 'Error: Username taken'
+            return render_template('register.html', error=error, retry=1)
 
         hash = generate_password_hash(password)
 
