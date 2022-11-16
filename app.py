@@ -75,7 +75,7 @@ def register():
         password = request.form.get('password')
         confirm_password = request.form.get('confirm')
 
-        if not username or not password or not confirm_password:
+        if not request.form.get("username") or not request.form.get('password') or not request.form.get('confirm'):
             error = "Please fill in all fields"
             return render_template('register.html', error=json.dumps(error))
         if password != confirm_password:
