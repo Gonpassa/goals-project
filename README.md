@@ -1,4 +1,4 @@
-#GOALS
+# GOALS
 #### Video Demo: <URL here>
 #### Description:
 
@@ -6,7 +6,7 @@ The objective is to create a web application where one can record the goals they
 The application will encourage the use of tools that are based on the science of setting & achieving goals to assist the user in achieving his/her goals.
 The tools used will be based on the research analyzed by Andrew Huberman on episode 55 of his podcast. 
 
-###Tools 
+### Tools 
 1: Use Focal Vision to Initiate Goal Pursuit
 Focusing vision on one point externally and fixing it there for 30-60 sec increases focus/drive to persue goals. 
 Implementation - Timer with a dot in the center of the page or something not hard to look at at. User will look at image for 30-60 sec. 
@@ -26,4 +26,6 @@ Visualizing failure will encourage goal persuit.
 Implementation - When users decide to persue goals, one task will be to write one to two sentences of what it will mean to fail at achieveing that goal, or
 have them type that when they first are submitting their goals and simply have a reminder of it when they decide to persue the goal. 
 
-5: 
+5: Make goals moderately Lofty
+Best goals are those that are not too easy and not too hard. 
+Implementation - When users input their goal, first remind them of this fact. To encourage tough but achievable goals. 
