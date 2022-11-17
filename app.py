@@ -45,10 +45,10 @@ def login():
         #Ensure username
         if not request.form.get('username'):
             error = 'Invalid username'
-            return render_template('login.html', error=error)
+            return render_template('login.html', error=error, retry=1)
         elif not request.form.get('password'):
             error = 'Invalid password'
-            return render_template('login.html', error=error)
+            return render_template('login.html', error=error, retry=1)
 
         #Query database for username
         username = request.form.get('username')
@@ -59,7 +59,7 @@ def login():
         #Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]['hash'], password):
             error = 'Invalid username or password'
-            return render_template('login.html', error=error)
+            return render_template('login.html', error=error, retry=1)
         
         # Remember user that logged in
         session['user_id'] = rows[0]['id']
@@ -67,6 +67,13 @@ def login():
         
         return render_template('index.html')
     return render_template('login.html')
+
+
+@app.route('/logout')
+def logout():
+
+    session.clear()
+    return redirect("/")
 
 @app.route('/register', methods = ["GET", "POST"])
 def register():
