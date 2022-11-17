@@ -83,16 +83,17 @@ def register():
             return render_template('register.html', error=error, retry=1)
 
         
-
-        usernames = db.execute("SELECT username FROM user")
+        usernames = []
+        usernames = db.execute("SELECT username FROM users")
         username = username.lower()
-        if username in usernames:
-            error = 'Error: Username taken'
-            return render_template('register.html', error=error, retry=1)
+        for i in usernames:
+            if username in i['username']:
+                error = 'Error: Username taken'
+                return render_template('register.html', error=error, retry=1)
 
         hash = generate_password_hash(password)
 
         db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hash)
-        return redirect('login.html')
+        return render_template("login.html")
 
     return render_template('register.html')
