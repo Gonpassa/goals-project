@@ -1,39 +1,55 @@
-
-.main-header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    height: 100vh;
     width: 100%;
-    height: 400px;
-    display: block;
-    padding-top: 10px;
+    background-color: rgb(70, 140, 187);
+    padding-top: 1rem;
 }
 
-.inner-header{
+.intro-container{
     border-radius: 25px;
+    height: 30%;
     width: 90%;
-    height: 100%;
     display: block;
-    margin: 0 auto;
-    background-color: rgba(95, 191, 255, 0.712) 
-}
-
-.brand-name-container {
-    height: 100%;
-    width: 100%;
-    display: table;
-    float:center;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.904);
 }
 
 .brand-name-container h1{
-    color: rgb(74, 74, 104);
     height: 100%;
-    display: table-cell;
-    vertical-align:middle;
-    font-family:'Sono';
-    font-size: 4em;
-    padding-left: 10px;
+    width: 50%;
+    margin-top: .5em;
+    font-size: 3rem;
+    font-family: 'Sono';
+    font-weight:bold;
 }
+
 .brand-name-container p{
     height: 100%;
-    display:table-row;
-    vertical-align:top;
+    width: 100%;
+    margin-top: 1em;
     font-family: 'Sono';
+    font-size: 1.1em;
+}
+
+.shape {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(70, 140, 187);
+    border-radius: 50px;
+
+}
+
+.about-container {
+    margin-top: 20%;
+    border-radius: 25px;
+    height: 20%;
+    width: 30%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.904);
 }
