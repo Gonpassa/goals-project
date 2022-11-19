@@ -1,0 +1,39 @@
+
+.main-header {
+    width: 100%;
+    height: 400px;
+    display: block;
+    padding-top: 10px;
+}
+
+.inner-header{
+    border-radius: 25px;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(95, 191, 255, 0.712) 
+}
+
+.brand-name-container {
+    height: 100%;
+    width: 100%;
+    display: table;
+    float:center;
+}
+
+.brand-name-container h1{
+    color: rgb(74, 74, 104);
+    height: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    font-family:'Sono';
+    font-size: 4em;
+    padding-left: 10px;
+}
+.brand-name-container p{
+    height: 100%;
+    display:table-row;
+    vertical-align:top;
+    font-family: 'Sono';
+}

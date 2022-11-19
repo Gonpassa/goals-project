@@ -33,12 +33,15 @@ def after_request(response):
 #HOME PAGE
 @app.route("/")
 def index():
-    return render_template('index.html')
+    
+    return render_template('index.html', )
 
 #LOGIN PAGE
 @app.route('/login', methods = ["GET", "POST"])
 def login():
     error = None
+    #forget any user id
+    session.clear()
 
     if request.method == "POST":
         

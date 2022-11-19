@@ -44,5 +44,4 @@ Implementation - Divide time frame of goal deadline by 2 and have user input wha
 
 ### Design
 
-
-Homepage (index.html) - 
+Homepage (index.html)-  
