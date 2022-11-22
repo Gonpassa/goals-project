@@ -1,13 +1,23 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Sono';
+}
+
+.wrapper {
+    background-color: rgb(70, 140, 187);
+}
+
 .main-container {
     height: 100vh;
-    width: 100%;
-    background-color: rgb(70, 140, 187);
+    width: 85%;
     padding-top: 1rem;
+    margin-inline: auto;
 }
 
 .intro-container{
@@ -25,7 +35,6 @@
     width: 50%;
     margin-top: .5em;
     font-size: 3rem;
-    font-family: 'Sono';
     font-weight:bold;
 }
 
@@ -33,7 +42,6 @@
     height: 100%;
     width: 100%;
     margin-top: 1em;
-    font-family: 'Sono';
     font-size: 1.1em;
 }
 
@@ -46,7 +54,7 @@
 }
 
 .about-container {
-    margin-top: 20%;
+    margin-top: 15%;
     border-radius: 25px;
     height: 20%;
     width: 30%;

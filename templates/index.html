@@ -6,19 +6,21 @@
 {% block main %}
     {% if session['user_id'] %}
 
-    {% endif %}
-    <div class="main-container">
-        <div class="intro-container">
-            <div class="shape"></div>
-            <div class="brand-name-container">
-                <h1>Achieve</h1>
-                <p>Pursue your goals with the backing of the best neuroscientific and psychological research.</p>
-            </div>
-            <div class="about-container">
-                <h2></h2>
+    {% else %}
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="intro-container">
+                <div class="shape"></div>
+                <div class="brand-name-container">
+                    <h1>Achieve</h1>
+                    <p>Pursue your goals with the backing of the best neuroscientific and psychological research.</p>
+                </div>
+                <div class="about-container">
+                    <h2></h2>
+                </div>
             </div>
         </div>
-        
     </div>
+    {% endif %}
 
 {% endblock %}
