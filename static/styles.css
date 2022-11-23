@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Sono';
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -60,4 +61,13 @@ body {
     width: 30%;
     display: block;
     background-color: rgba(255, 255, 255, 0.904);
+}
+
+.dashboard {
+    height: 500px;
+}
+.dashboard-header {
+    display: block;
+    margin-inline: 50%;
+    padding-top: 10px;
 }

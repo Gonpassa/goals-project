@@ -31,10 +31,15 @@ def after_request(response):
 
 
 #HOME PAGE
-@app.route("/")
+@app.route("/", methods =['GET', 'POST'])
 def index():
-    
-    return render_template('index.html', )
+    if request.method == 'GET' or request.method == 'POST':
+        if session:
+            username = db.execute("SELECT username FROM users WHERE id = (?)", session['user_id'])
+            return render_template('index.html', username=username[0]['username'])
+
+
+        return render_template('index.html',)
 
 #LOGIN PAGE
 @app.route('/login', methods = ["GET", "POST"])
