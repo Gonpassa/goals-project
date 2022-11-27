@@ -5,27 +5,12 @@
 
 {% block main %}
     {% if session['user_id'] %}
-    <div class="dashboard">
-        <div class="dashboard-header">
-            <h1>Welcome!</h1>
-        </div>
-
-    </div>
-    {% else %}
-    <div class="wrapper">
-        <div class="main-container">
-            <div class="intro-container">
-                <div class="shape"></div>
-                <div class="brand-name-container">
-                    <h1>Achieve</h1>
-                    <p>Pursue your goals with the backing of the best neuroscientific and psychological research.</p>
-                </div>
-                <div class="about-container">
-                    <h2></h2>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     {% endif %}
-
+    <section class="container">
+        <h1>Welcome to Achieve.</h1>
+        <section>
+            <h2>Goal achievement, made easier.</h2>
+        </section>
+    </section>
 {% endblock %}
