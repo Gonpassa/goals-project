@@ -5,12 +5,16 @@
 
 {% block main %}
     {% if session['user_id'] %}
-    
-    {% endif %}
     <section class="container">
+        <h1>Hello, Please click on dashboard to get started!</h1>
+    </section>
+    {% else %} 
+    <section class="box">
         <h1>Welcome to Achieve.</h1>
         <section>
             <h2>Goal achievement, made easier.</h2>
+            <p>Pursue your goals with the best neuroscientific and psychological research.</p>
         </section>
     </section>
+    {% endif %}
 {% endblock %}
