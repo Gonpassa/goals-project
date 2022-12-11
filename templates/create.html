@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}
+    Create
+{% endblock %}
+
+{% block main %}
+    <h3>Create Goal</h3>
+    <section class="formContainer">
+        <form action="/create" method="post" class="form">
+            <label for="goal">Goal</label>
+            <input type="text" autocomplete="off" autofocus id="goal">
+            <label for="success">Success</label>
+            <input type="text" autocomplete="off" autofocus id="success">
+            <label for="failure">Failure</label>
+            <input type="text" autocomplete="off" autofocus id="failure">
+        </form>
+
+    </section>
+{% endblock %}

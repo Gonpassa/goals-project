@@ -39,7 +39,23 @@ def index():
             return render_template('index.html', username=username[0]['username'])
 
 
-        return render_template('index.html',)
+        return render_template('index.html')
+
+
+#Dashboard
+@app.route("/dashboard", methods = ['GET', 'POST'])
+def dashboard():
+    return render_template('dashboard.html')
+
+
+#CREATE GOAL
+@app.route("/create", methods=['GET','POST'])
+def create():
+    if request.method == 'POST':
+        return render_template('dashboard.html')
+
+    return render_template('create.html')
+
 
 #LOGIN PAGE
 @app.route('/login', methods = ["GET", "POST"])
