@@ -7,13 +7,24 @@
     <h3>Create Goal</h3>
     <section class="formContainer">
         <form action="/create" method="post" class="form">
+            <p>Please create a moderately lofty Goal. In between impossible to achieve and too easy to achieve. This has a huge influence on whether you achieve the goal, so please be honest with what you can achieve if you truly tried.</p>
             <label for="goal">Goal</label>
-            <input type="text" autocomplete="off" autofocus id="goal">
+            <input type="text" autocomplete="off" autofocus id="goal" name="goal">
+
+            <label for="date">Deadline</label>
+            <input type="date" autocomplete="off" id="date" name="date">
+
+            <p>Now envision what it would be like to achieve your goal, and what it would look like to have achieved it, in the present tense. For example: "I will own a house", "I will squat 300lbs". Use as much detail as possible.</p>
             <label for="success">Success</label>
-            <input type="text" autocomplete="off" autofocus id="success">
+            <input type="text" autocomplete="off"  id="success" name="success">
+
+            <p>Envision what it would mean to fail at achieving your goal</p>
             <label for="failure">Failure</label>
-            <input type="text" autocomplete="off" autofocus id="failure">
+            <input type="text" autocomplete="off"  id="failure" name="failure">
+
+            
         </form>
+
 
     </section>
 {% endblock %}

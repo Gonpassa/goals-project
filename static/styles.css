@@ -108,5 +108,15 @@ section.formContainer{
 
 h3{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
+}
+
+.form input{
+    height: 5%;
+    vertical-align: top;
+    word-break: break-word;
+}
+.form p {
+    font-size: 1.1rem;
+    padding-top: 4%;
 }
