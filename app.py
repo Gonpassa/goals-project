@@ -45,6 +45,7 @@ def index():
 #Dashboard
 @app.route("/dashboard", methods = ['GET', 'POST'])
 def dashboard():
+    
     return render_template('dashboard.html')
 
 
@@ -52,7 +53,14 @@ def dashboard():
 @app.route("/create", methods=['GET','POST'])
 def create():
     if request.method == 'POST':
-        return render_template('dashboard.html')
+        goal = request.form.get("goal")
+        deadline = request.form.get("deadline")
+        success = request.form.get("success")
+        failure = request.form.get('failure')
+        now = datetime.date.today()
+        db.execute("INSERT INTO goal (goal, success, failure, date_created, deadline, id) VALUES (?, ?, ? ,? ,?, ?)", goal, success, failure, now, deadline, session['user_id'])
+
+        return redirect('dashboard')
 
     return render_template('create.html')
 
