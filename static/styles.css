@@ -61,7 +61,6 @@ section.box {
     display: flex;
     height: 100%;
     width: 100%;
-    border: 2px solid black;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: flex-start;
@@ -69,9 +68,10 @@ section.box {
 
 .dashboardContainer section{
     display: flex;
-    border: 2px solid red;
+    border: 2px solid #ccc;
+    border-radius: 25px;
     height: 30%;
-    width: 15%;
+    width: 23%;
     margin: 5% 0 0 0 ;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -85,7 +85,7 @@ section.box {
 }
 
 .dashboardChild a{
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration: none;
 }
 
