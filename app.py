@@ -45,8 +45,10 @@ def index():
 #Dashboard
 @app.route("/dashboard", methods = ['GET', 'POST'])
 def dashboard():
-    
-    return render_template('dashboard.html')
+        rows = db.execute("SELECT goal_id FROM goal WHERE id IN (?)", session["user_id"])
+        rows = len(rows)
+        goals = db.execute("SELECT goal FROM goal WHERE id IN (?)", session['user_id'])
+        return render_template('dashboard.html', rows=rows, goals=goals)
 
 
 #CREATE GOAL
