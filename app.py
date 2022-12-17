@@ -65,6 +65,8 @@ def create():
         db.execute("INSERT INTO goal (goal, success, failure, date_created, deadline, id) VALUES (?, ?, ? ,? ,?, ?)", goal, success, failure, now, deadline, session['user_id'])
 
         return redirect('dashboard')
+    if session["user_id"]:
+        return render_template('create.html')
     return render_template('login.html')
     
 
