@@ -5,17 +5,18 @@
 
 {% block main %}
 
-    <h2>Goals</h2>
+    <h2 id ="dashboardHead">Goals</h2>
     <section class="dashboardContainer">
         {% for i in range(rows) %}
         <section class="dashboardChild">
-            <span> {{ goals[i].goal}}</span>
+            <span>{{ goals[i].goal}}</span>
+            <span>Deadline: {{ goals[i].deadline}}</span>
             <a href="/pursue">Pursue</a>
         </section>
         {% endfor %}
         <section class="dashboardChild">
             <span>Create a New Goal</span>
-            <a href="/create">+</a>
+            <a href="/create" id="plus">+</a>
         </section>
     </section>
 {% endblock %}
