@@ -7,11 +7,11 @@
 
     <h2 id ="dashboardHead">Goals</h2>
     <section class="dashboardContainer">
-        {% for i in range(rows) %}
+        {% for goal in goals %}
         <section class="dashboardChild">
-            <span>{{ goals[i].goal}}</span>
-            <span>Deadline: {{ goals[i].deadline}}</span>
-            <a href="/pursue">Pursue</a>
+            <span>{{ goal.goal}}</span>
+            <span>Deadline: {{ goal.deadline}}</span>
+            <button data-goal-id="{{ goal.goal_id }}" id="button-{{ loop.index }}">Pursue</a>
         </section>
         {% endfor %}
         <section class="dashboardChild">
