@@ -48,7 +48,8 @@ def dashboard():
     if session['user_id']:
         rows = db.execute("SELECT goal_id FROM goal WHERE id IN (?)", session["user_id"])
         rows = len(rows)
-        goals = db.execute("SELECT goal FROM goal WHERE id IN (?)", session['user_id'])
+        goals = db.execute("SELECT goal, deadline, goal_id FROM goal WHERE id IN (?)", session['user_id'])
+        
         return render_template('dashboard.html', rows=rows, goals=goals)
     return redirect('login')
 
@@ -69,7 +70,10 @@ def create():
         return render_template('create.html')
     return render_template('login.html')
     
-
+#PURSUE GOAL
+@app.route("/pursue")
+def pursue():
+    return render_template('pursue.html')
 
 #LOGIN PAGE
 @app.route('/login', methods = ["GET", "POST"])

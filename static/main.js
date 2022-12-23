@@ -1,8 +1,5 @@
 
 // Make the form unable to be sumbitted unless all field are filled in in create.html//
-
-
-
 const fields = document.querySelectorAll('.valid');
 const submitButton = document.getElementById('formBtn');
       

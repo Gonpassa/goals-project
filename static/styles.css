@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Sono', 'Helvetica';
+    font-family: 'Sono', 'Helvetica', sans-serif;
     min-height: 100vh;
     width: 100%;
 }
@@ -57,6 +57,11 @@ section.box {
 
 /* dashboard */
 
+#dashboardHead{
+    font-size: 3rem;
+    text-align: center;
+    margin: 1% 0 0 0 ;
+}
 .dashboardContainer {
     display: flex;
     height: 100%;
@@ -72,7 +77,7 @@ section.box {
     border-radius: 25px;
     height: 30%;
     width: 23%;
-    margin: 5% 0 0 0 ;
+    margin: 2% 0 0 0 ;
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
@@ -80,15 +85,20 @@ section.box {
 }
 
 .dashboardChild span{
-   font-size: 1.2rem;
+   font-size: 1rem;
    font-weight: 700;
 }
 
 .dashboardChild a{
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    color: rgb(109, 199, 255);
 }
 
+#plus{
+    font-size: 3rem;
+    
+}
 /* create goal */
 
 section.formContainer{
