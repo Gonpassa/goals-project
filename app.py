@@ -74,7 +74,7 @@ def create():
 @app.route("/pursue", methods=['GET', 'POST'])
 def pursue():
     if request.method == 'POST':
-        goal_id = request.form['goal_id']
+        goal_id = request.get_json()
 
         goal = db.execute('SELECT goal, failure FROM goal WHERE goal_id = (?)', goal_id)
 
