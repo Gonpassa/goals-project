@@ -10,8 +10,8 @@
         {% for goal in goals %}
         <section class="dashboardChild">
             <span>{{ goal.goal}}</span>
-            <span>Deadline: {{ goal.deadline}}</span>
-            <button data-goal-id="{{ goal.goal_id }}" id="button-{{ loop.index }}">Pursue</a>
+            <span>Deadline: {{goal.deadline}}</span>
+            <button data-goal-id="{{ goal.goal_id }}" id="button-{{ loop.index }}" class="btn btn-primary dash">Pursue</a>
         </section>
         {% endfor %}
         <section class="dashboardChild">

@@ -71,8 +71,14 @@ def create():
     return render_template('login.html')
     
 #PURSUE GOAL
-@app.route("/pursue")
+@app.route("/pursue", methods=['GET', 'POST'])
 def pursue():
+    if request.method == 'POST':
+        goal_id = request.form['goal_id']
+
+        goal = db.execute('SELECT goal, failure FROM goal WHERE goal_id = (?)', goal_id)
+
+        return render_template('pursue.html', goal=goal)
     return render_template('pursue.html')
 
 #LOGIN PAGE
