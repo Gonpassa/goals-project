@@ -65,6 +65,9 @@ if (document.querySelector('.pursueContainer')){
     secondItems = Array.from(secondItems)
     secondItems.forEach(element => element.classList.add('hidden'))
     document.querySelector('#next2').classList.add('hidden')
-
-    document.querySelector('.end').classList.remove('hidden')
+    
+    let paragraph = document.querySelectorAll('.next2');
+    paragraph = Array.from(paragraph);
+    paragraph.forEach(p => p.classList.remove('hidden'));
+    
 }}
