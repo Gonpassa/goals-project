@@ -50,6 +50,4 @@ Register (register.html) - Allows user to register, sends data to backend, and e
 
 Login (login.html)- Checks database for username, and hashpassword, if they match up with someone in the database the user is logged in and taken to index.html.
 
-
-
 Pursue (pursue.html)- Purpose of this webpage is to set the individual into pursue mode whenever he clicks on a goal to pursue. Once the button to pursue was clicked the webpage should first ask the user to focus on a spot in the webpage for 60 seconds, afterwards the user will be reminded of the results of his failure to futher motivate him. Then the user can begin goal pursuit. 
