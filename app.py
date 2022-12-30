@@ -113,7 +113,7 @@ def login():
         session['user_id'] = rows[0]['id']
 
         
-        return render_template('index.html')
+        return redirect('dashboard')
     return render_template('login.html')
 
 
