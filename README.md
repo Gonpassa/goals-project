@@ -55,3 +55,7 @@ Pursue (pursue.html)- Purpose of this webpage is to set the individual into purs
 Create (create.html) - This is where the user will create their goals. They are encouraged to make moderately lofty goals, because those are best according to the studies reported by Huberman. Users will also be asked to imagine what it would be like to fail and succeed at the goal
 
 Dashboard (dashboard.html) - This is where the user will be able to decided whether to create a new goal or puruse an existing goal. All goals will be listed on cards and the data from the database will return each goal in order, as well as the deadline for each goal. 
+
+App(app.py) - This is where the backend code lives. This is how I am able to store the user's inputs and manipulate it to generate content on the website. 
+
+Styles(styles.css) - This is where I configured the styles of the website. How I made it look pretty(kinda). 
