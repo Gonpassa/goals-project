@@ -44,10 +44,14 @@ Implementation - Divide time frame of goal deadline by 2 and have user input wha
 
 ### Design
 
-Homepage (index.html)- Webpage to display welcome message once user logged in, aswell as a description of the project when the user is not logged in.
+Homepage (index.html)- Webpage to display welcome message once user logged in, as well as a description of the project when the user is not logged in.
 
 Register (register.html) - Allows user to register, sends data to backend, and encrypts passwords.
 
 Login (login.html)- Checks database for username, and hashpassword, if they match up with someone in the database the user is logged in and taken to index.html.
 
 Pursue (pursue.html)- Purpose of this webpage is to set the individual into pursue mode whenever he clicks on a goal to pursue. Once the button to pursue was clicked the webpage should first ask the user to focus on a spot in the webpage for 60 seconds, afterwards the user will be reminded of the results of his failure to futher motivate him. Then the user can begin goal pursuit. 
+
+Create (create.html) - This is where the user will create their goals. They are encouraged to make moderately lofty goals, because those are best according to the studies reported by Huberman. Users will also be asked to imagine what it would be like to fail and succeed at the goal
+
+Dashboard (dashboard.html) - This is where the user will be able to decided whether to create a new goal or puruse an existing goal. All goals will be listed on cards and the data from the database will return each goal in order, as well as the deadline for each goal. 

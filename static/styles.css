@@ -66,8 +66,9 @@ section.secondBox >h2{
 section.secondBox section{
     width: 25%;
     height: 70%;
-    border: 2px solid gray;
-    border-radius: 11%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
 }
 .container h1{
     text-align: center;
@@ -76,6 +77,7 @@ section.secondBox section{
 section.secondBox section > ol li{
     margin-bottom: 10%;
 }
+
 
 /* dashboard */
 
@@ -95,7 +97,7 @@ section.secondBox section > ol li{
 
 .dashboardContainer section{
     display: flex;
-    border: 2px solid #ccc;
+    box-shadow: 0px 3px 10px rgba(0,0,0, 0.2) ;
     border-radius: 25px;
     height: 30%;
     width: 23%;
@@ -137,6 +139,9 @@ section.formContainer{
     display: flex;
     flex-flow: column;
     width: 50%;
+    box-shadow: 0px 3px 10px rgba(0,0,0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 h3{
