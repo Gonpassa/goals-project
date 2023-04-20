@@ -154,6 +154,10 @@ h3{
     vertical-align: top;
     word-break: break-word;
 }
+
+#date{
+    padding: 10px 0;
+}
 .form p {
     font-size: 1.1rem;
     padding-top: 4%;
