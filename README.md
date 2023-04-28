@@ -1,5 +1,9 @@
 # ACHIEVE
-#### Video Demo: <URL here>
+#### Video Demo: 
+<video width="320" height="240" controls>
+  <source src="goals_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 #### Description:
 
 The objective is to create a web application where one can record the goals they have. 
