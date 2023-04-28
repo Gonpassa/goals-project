@@ -1,5 +1,5 @@
 # ACHIEVE
-#### Video Demo: ![]([goals_demo.mp4](https://github.com/Gonpassa/goals-project/blob/main/goals_demo.mp4))
+#### Video Demo: ![goals_demo.mp4](https://github.com/Gonpassa/goals-project/blob/main/goals_demo.mp4)
 #### Description:
 
 The objective is to create a web application where one can record the goals they have. 
